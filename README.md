@@ -56,7 +56,7 @@ We welcome contributions! If you'd like to contribute to the project, please fol
 
 ## Contact
 
-If you have any questions or need assistance, feel free to contact us at [your-email@example.com](mailto:contact@ilhamm.biz.id).
+If you have any questions or need assistance, feel free to contact us at [contact@ilhamm.biz.id](mailto:contact@ilhamm.biz.id).
 
 ## License
 
