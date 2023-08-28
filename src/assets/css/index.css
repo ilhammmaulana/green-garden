@@ -5,9 +5,16 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url(../fonts/Poppins/Poppins-Bold.ttf) format('ttf');
+    src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    /* Correct format value */
+}
+
+@font-face {
+    font-family: 'signpainter';
+    src: url('../fonts/SignPainter/SignPainter-HouseScript-Regular.ttf') format('truetype');
+    /* Correct format value */
 }
 
 * {
-    font-family: 'Poppins', 'Arial';
+    font-family: 'Poppins', Arial, sans-serif;
 }

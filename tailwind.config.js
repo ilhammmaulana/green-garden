@@ -21,6 +21,10 @@ export default {
       },
       height: {
         'section-sm': '50rem'
+      },
+      fontFamily: {
+        poppins: 'Poppins',
+        signpainter: 'signpainter'
       }
     },
 
