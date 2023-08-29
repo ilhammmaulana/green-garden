@@ -1,11 +1,12 @@
 import Layout from "../../components/layouts/Layout";
 import backgroundImage from "../../assets/images/stock/Background-1.png";
 import Button from "../../components/buttons/Button";
+import starIcon from "../../assets/images/icons/icon-star.png";
 export default function Home() {
   return (
     <Layout>
       <section
-        className="h-section-sm bg-no-repeat mx-auto bg-cover bg-red-500 flex justify-center "
+        className="h-section-sm bg-no-repeat mx-auto bg-cover flex justify-center"
         style={{
           backgroundImage: `   linear-gradient(
             rgba(0, 0, 0, 0.3), 
@@ -23,6 +24,18 @@ export default function Home() {
           </h6>
           <Button>Hire Our Profesional Now!</Button>
         </div>
+      </section>
+      <section className="h-section-sm mx-auto bg-cover">
+        <h1 className=" font-signpainter text-4xl mt-10 text-center">Why Should We?</h1>
+        <p className="text-center mt-2">Because we belive you are our loss and we serve you with passion</p>
+        <div className="grid grid-rows-3 grid-flow-col gap-4 justify-center">
+        <div className="flex flex-col w-40 text-center">
+          <img src={starIcon} alt="Star Image" className="w-50 mx-auto mb-7" />
+          <h4 className="text-1xl font-bold">Good reputation</h4>
+          <p className="text-xs">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        </div>
+
       </section>
     </Layout>
   );
