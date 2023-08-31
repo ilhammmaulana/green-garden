@@ -23,7 +23,9 @@ export default {
         pink: colors.fuchsia,
       },
       height: {
-        'section-sm': '46.75rem'
+        'section-sm': '800px',
+      },
+      width: {
       },
       fontFamily: {
         poppins: 'Poppins',
