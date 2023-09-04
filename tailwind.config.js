@@ -24,8 +24,10 @@ export default {
       },
       height: {
         'section-sm': '800px',
+        'section-md': '400px'
       },
       width: {
+        'card-review': '800px',
       },
       fontFamily: {
         poppins: 'Poppins',

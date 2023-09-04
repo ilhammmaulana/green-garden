@@ -5,6 +5,12 @@ import starIcon from "../../assets/images/icons/icon-star.png";
 import legalCompany from "../../assets/images/icons/Icon-legal-company.png";
 import focusOnQualityIcon from "../../assets/images/icons/Icon-award.png";
 import goodPriceIcon from "../../assets/images/icons/Icon-good-price.png";
+import backgroundImage2 from "../../assets/images/stock/Background-3.jpeg";
+import client1 from "../../assets/images/stock/Client-1.jpg";
+import client2 from "../../assets/images/stock/Client-2.jpg";
+import client3 from "../../assets/images/stock/Client-3.jpg";
+import client4 from "../../assets/images/stock/Client-4.jpg";
+import client5 from "../../assets/images/stock/Client-5.jpg";
 
 export default function Home() {
   return (
@@ -29,11 +35,11 @@ export default function Home() {
           <Button>Hire Our Profesional Now!</Button>
         </div>
       </section>
-      <section className="h-section-sm mx-auto bg-cover">
-        <h1 className=" font-signpainter text-4xl mt-10 text-center">
-          Why Should We?
+      <section className="section-sm mx-auto bg-cover flex flex-col">
+        <h1 className="font-signpainter text-5xl mt-1 text-center">
+          Why Should We ?
         </h1>
-        <p className="text-center mt-2 mx-2 mb-14">
+        <p className="text-center mt-3 mx-2 mb-14">
           Because we belive you are our loss and we serve you with passion
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:sm:grid-cols-4 grid-rows-1 gap-4 justify-center">
@@ -76,6 +82,43 @@ export default function Home() {
             </p>
           </div>
         </div>
+      </section>
+      <section
+        className="section-sm bg-cover flex flex-col text-white"
+        style={{
+          backgroundImage: `   linear-gradient(
+            rgba(0, 0, 0, 0.4), 
+            rgba(0, 0, 0, 0.1)
+          ),url(${backgroundImage2})`,
+          backgroundPositionY: "40%",
+        }}
+      >
+        <h1 className="font-signpainter text-5xl mt-1 text-center">
+          Our Best Boss
+        </h1>
+        <p className="text-center mt-3 mx-2 mb-14">
+          Because we belive you are our loss and we serve you with passion
+        </p>
+        <div className="card-component md:flex justify-center  mx-auto gap-5">
+          <img src={client1} alt="" className="mx-auto rounded-full" />
+          <div className="text-center md:text-left">
+            <h2 className="text-3xl mb-3 font-bold">Jean Fox JR</h2>
+            <p className="rounded-2xl">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+              consequatur ipsam eius ad cupiditate, assumenda explicabo eaque
+              facilis eveniet a nisi fuga natus sapiente beatae dolor obcaecati
+              numquam totam eligendi quos asperiores ab, quia excepturi, quaerat
+              repellendus. Id, ducimus soluta.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quo
+          accusantium blanditiis molestias possimus, est hic laborum omnis!
+          Consectetur, quis?
+        </p>
       </section>
     </Layout>
   );

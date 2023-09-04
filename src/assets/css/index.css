@@ -20,5 +20,36 @@
 }
 
 section {
-    padding: 2.5rem 0;
+    padding: 4.5rem 0;
+}
+
+section.section-sm {
+    min-height: 620px;
+    display: flex;
+}
+
+section.section-md {
+    min-height: 800px;
+}
+
+.card-component {
+    max-width: 800px;
+    padding: 1.5rem .8rem;
+}
+
+.card-component img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.card-component p {
+    background-color: rgba(255, 255, 255, .3);
+    padding: .5rem .8rem;
+}
+
+@media only screen and (max-width: 600px) {
+    section {
+        padding: 4.5rem 2rem;
+    }
 }
