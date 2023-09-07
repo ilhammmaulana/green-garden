@@ -1,4 +1,3 @@
-import { coolGray } from "tailwindcss/colors";
 import logos from "../../assets/images/logos/Logo-GG-w200.png";
 import { useState, useEffect } from "react";
 export default function Navbar() {
@@ -28,6 +27,7 @@ export default function Navbar() {
   return (
     <div
       className="w-full py-4 fixed transition duration-800 ease-in-out"
+      style={{ zIndex: 99 }}
       id="navbar"
     >
       <nav className="container mx-auto flex justify-around items-center h-15">

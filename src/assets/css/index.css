@@ -17,6 +17,11 @@
 
 * {
     font-family: 'Poppins', Arial, sans-serif;
+    border: 1px solid green;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 section {
@@ -24,8 +29,8 @@ section {
 }
 
 section.section-sm {
-    min-height: 620px;
-    display: flex;
+    min-height: 500px;
+
 }
 
 section.section-md {
@@ -35,6 +40,8 @@ section.section-md {
 .card-component {
     max-width: 800px;
     padding: 1.5rem .8rem;
+    display: flex !important;
+    margin: 0 auto;
 }
 
 .card-component img {
@@ -48,8 +55,70 @@ section.section-md {
     padding: .5rem .8rem;
 }
 
+.slick-next {
+    display: none !important;
+}
+
+.slick-slider.slick-initialized {
+    height: 250px;
+}
+
+
+.slick-dots {
+    text-align: right;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.slick-dots li button::before {
+    content: '' !important;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    opacity: 0.7;
+    width: 16px !important;
+    height: 16px !important;
+    border-radius: 50% !important;
+    cursor: pointer;
+    font-family: 'Arial' !important;
+}
+
+.slick-dots li.slick-active button::before {
+    opacity: 1 !important;
+    color: #fff !important;
+    background-color: #fff !important;
+    font-family: 'Arial' !important;
+}
+
+.slick-dots.slick-slide {
+    transition: transform 0.5s ease;
+}
+
+.card-service {
+    max-width: 300px;
+}
+
 @media only screen and (max-width: 600px) {
     section {
         padding: 4.5rem 2rem;
+    }
+
+    .slick-dots {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .slick-slider.slick-initialized {
+        height: auto;
+    }
+
+    .slick-next {
+        display: block !important;
+    }
+
+    .card-component {
+        max-width: 800px;
+        padding: 1.5rem .8rem;
+        display: flex !important;
+        flex-direction: column;
     }
 }
