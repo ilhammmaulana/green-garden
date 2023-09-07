@@ -10,14 +10,21 @@
 }
 
 @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+}
+
+@font-face {
     font-family: 'signpainter';
     src: url('../fonts/SignPainter/SignPainter-HouseScript-Regular.ttf') format('truetype');
     /* Correct format value */
 }
 
+
 * {
     font-family: 'Poppins', Arial, sans-serif;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 html {
@@ -29,7 +36,7 @@ section {
 }
 
 section.section-sm {
-    min-height: 500px;
+    min-height: 400px;
 
 }
 
@@ -96,6 +103,52 @@ section.section-md {
     max-width: 300px;
 }
 
+#offer-section {
+    height: 400px !important;
+}
+
+img.image-offer-section {
+    position: relative !important;
+    bottom: 8.67rem;
+    right: -20%;
+    transform: scaleX(-1);
+    max-width: 475px;
+}
+
+.card-price {
+    width: 300px;
+    height: 450px;
+    padding: .5rem 0;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    img.image-offer-section {
+        width: 400px;
+        bottom: 4rem;
+    }
+}
+
+.container-image-projects img {
+    width: 100%;
+    /* Set the width to 100% to fill the column */
+    height: 200px;
+    /* Allow the height to adjust proportionally based on the width */
+}
+
+@media only screen and (max-width: 928px) {
+    #offer-section {
+        height: auto !important;
+    }
+
+    img.image-offer-section {
+        max-width: 400px;
+        bottom: -4.5rem;
+        right: 0;
+
+    }
+}
+
 @media only screen and (max-width: 600px) {
     section {
         padding: 4.5rem 2rem;
@@ -120,5 +173,15 @@ section.section-md {
         padding: 1.5rem .8rem;
         display: flex !important;
         flex-direction: column;
+    }
+
+    #offer-section {
+        height: auto !important;
+    }
+
+    img.image-offer-section {
+        position: relative !important;
+        max-width: 100%;
+        bottom: -4.5rem;
     }
 }

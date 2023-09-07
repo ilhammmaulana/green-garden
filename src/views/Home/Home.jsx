@@ -1,11 +1,17 @@
+// Components
 import Layout from "../../components/layouts/Layout";
 import backgroundImage from "../../assets/images/stock/Background-1.png";
 import Button from "../../components/buttons/Button";
+import PricingCard from "../../components/cards/PricingCard";
+import BasicCard from "../../components/cards/BasicCard";
+
 import starIcon from "../../assets/images/icons/icon-star.png";
 import legalCompany from "../../assets/images/icons/Icon-legal-company.png";
 import focusOnQualityIcon from "../../assets/images/icons/Icon-award.png";
 import goodPriceIcon from "../../assets/images/icons/Icon-good-price.png";
 import backgroundImage2 from "../../assets/images/stock/Background-3.jpeg";
+import backgroundImage3 from "../../assets/images/stock/Background-2.jpeg";
+
 import client1 from "../../assets/images/stock/Client-1.jpg";
 import client2 from "../../assets/images/stock/Client-2.jpg";
 import client3 from "../../assets/images/stock/Client-3.jpg";
@@ -15,10 +21,18 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import imagService1 from "../../assets/images/stock/Service-1.jpg";
-import imagService2 from "../../assets/images/stock/Service-2.jpg";
+import imagService2 from "../../assets/images/stock/Service-5.jpeg";
 import imagService3 from "../../assets/images/stock/Service-3.jpeg";
 import imagService4 from "../../assets/images/stock/Service-4.jpeg";
-import BasicCard from "../../components/cards/BasicCard";
+import worker1 from "../../assets/images/stock/worker2.png";
+
+// Icons
+import iconArrow from "../../assets/images/icons/arrow-right.png";
+// Projects
+import project1 from "../../assets/images/stock/Project-1.jpeg";
+import project2 from "../../assets/images/stock/Project-2.jpeg";
+import project3 from "../../assets/images/stock/Project-3.jpeg";
+import project4 from "../../assets/images/stock/Project-4.jpeg";
 
 export default function Home() {
   const settings = {
@@ -204,22 +218,98 @@ export default function Home() {
             title="Grass Cuting"
           />
           <BasicCard
-            image={imagService1}
+            image={imagService2}
             text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad esse doloremque voluptatum quis magnam aspernatur atque suscipit ipsa. Reiciendis, illum.
           "
-            title="Grass Cuting"
+            title="Planting"
           />
           <BasicCard
-            image={imagService1}
+            image={imagService3}
             text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad esse doloremque voluptatum quis magnam aspernatur atque suscipit ipsa. Reiciendis, illum.
           "
-            title="Grass Cuting"
+            title="Seed Provider"
           />
           <BasicCard
-            image={imagService1}
+            image={imagService4}
             text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad esse doloremque voluptatum quis magnam aspernatur atque suscipit ipsa. Reiciendis, illum.
         "
-            title="Grass Cuting"
+            title="Prepare Land Garden"
+          />
+        </div>
+      </section>
+      <section
+        id="offer-section"
+        className="section-sm bg-cover text-white"
+        style={{
+          backgroundImage: `linear-gradient(
+                 rgba(0, 0, 0, 0.4), 
+                 rgba(0, 0, 0, 0.3)
+               ),url(${backgroundImage3})`,
+          backgroundPositionY: "40%",
+        }}
+      >
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 ">
+          <div className="sm:ms-28 sm:mt-14 z-20">
+            <h1 className="font-signpainter mb-2 sm:mb-0  text-5xl mt-1 text-start text-white">
+              Lets make your garden awesome !
+            </h1>
+            <p className="mb-3">
+              With your profesional we make wonderfull garden in yard
+            </p>
+            <Button> Hire Our Profesional Now !</Button>
+          </div>
+          <img src={worker1} className="image-offer-section" alt="" />
+        </div>
+      </section>
+      <section className="bg-green-dark-theme-500">
+        <div className="container mx-auto  text-center text-white">
+          <h1 className="font-signpainter mb-2 sm:mb-4  text-5xl mt-1">
+            Recent Project
+          </h1>
+          <p className="mb-8 sm:mb-4 text-center ">
+            With your profesional we make wonderfull garden in yard
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-2 container-image-projects mb-5 xl:mx-20">
+            <img src={project1} alt="" />
+            <img src={project2} alt="" />
+            <img src={project3} alt="" />
+            <img src={project4} alt="" />
+          </div>
+          <button className="bg-green-theme-500 flex align-middle justify-center mx-auto hover:bg-green-theme-600 text-white py-2 px-4 rounded">
+            <p>More projects</p>
+            <img
+              src={iconArrow}
+              alt="Arrow image"
+              className="ms-2 w-5 m-auto"
+            />
+          </button>
+        </div>
+      </section>
+      <section>
+        <h1 className="font-signpainter mb-2 sm:mb-4 text-5xl mt-1 text-center">
+          Pricing Guide
+        </h1>
+        <p className="mb-8 sm:mb-4 text-center">
+          Choose your pricing plan and we will make your garden beuty
+        </p>
+        <div className="flex flex-col lg:flex-row justify-center gap-8">
+          <PricingCard
+            name="Basic"
+            price="10"
+            subprice="68"
+            description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere veniam eius quidem veritatis culpa et? Accusantium nemo architecto perspiciatis unde?"
+          />
+          <PricingCard
+            name="Standart"
+            price="10"
+            subprice="68"
+            description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere veniam eius quidem veritatis culpa et? Accusantium nemo architecto perspiciatis unde?"
+          />
+          <PricingCard
+            name="Premium"
+            price="10"
+            subprice="68"
+            description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere veniam eius quidem veritatis culpa et? Accusantium nemo architecto perspiciatis unde?"
           />
         </div>
       </section>

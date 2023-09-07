@@ -14,6 +14,9 @@ export default {
           500: '#31BE6C',
           600: '#2eaa62'
         },
+        'green-dark-theme': {
+          500: '#20323B'
+        },
         black: colors.black,
         white: colors.white,
         gray: colors.slate,
