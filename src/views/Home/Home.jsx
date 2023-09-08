@@ -33,6 +33,7 @@ import project1 from "../../assets/images/stock/Project-1.jpeg";
 import project2 from "../../assets/images/stock/Project-2.jpeg";
 import project3 from "../../assets/images/stock/Project-3.jpeg";
 import project4 from "../../assets/images/stock/Project-4.jpeg";
+import logo from "../../assets/images/logos/Logo-GG-w200.png";
 
 export default function Home() {
   const settings = {
@@ -137,6 +138,7 @@ export default function Home() {
           <Slider {...settings}>
             <div className="card-component md:flex gap-5">
               <img src={client1} alt="" className="mx-auto rounded-full" />
+              <p>lorem25</p>
               <div className="text-center md:text-left">
                 <h2 className="text-3xl mb-3 font-bold">Jean Fox JR</h2>
                 <p className="rounded-2xl">
@@ -150,6 +152,7 @@ export default function Home() {
             </div>
             <div className="card-component md:flex justify-center  mx-auto gap-5">
               <img src={client2} alt="" className="mx-auto rounded-full" />
+              <p>lorem25</p>
               <div className="text-center md:text-left">
                 <h2 className="text-3xl mb-3 font-bold">Jessie Crager</h2>
                 <p className="rounded-2xl">
@@ -163,6 +166,7 @@ export default function Home() {
             </div>
             <div className="card-component md:flex justify-center  mx-auto gap-5">
               <img src={client3} alt="" className="mx-auto rounded-full" />
+              <p>lorem25</p>
               <div className="text-center md:text-left">
                 <h2 className="text-3xl mb-3 font-bold">Gennie Dee</h2>
                 <p className="rounded-2xl">
@@ -176,6 +180,7 @@ export default function Home() {
             </div>
             <div className="card-component md:flex justify-center  mx-auto gap-5">
               <img src={client4} alt="" className="mx-auto rounded-full" />
+              <p>lorem25</p>
               <div className="text-center md:text-left">
                 <h2 className="text-3xl mb-3 font-bold">Yoshi</h2>
                 <p className="rounded-2xl">
@@ -189,6 +194,7 @@ export default function Home() {
             </div>
             <div className="card-component md:flex justify-center  mx-auto gap-5">
               <img src={client5} alt="" className="mx-auto rounded-full" />
+              <p>lorem25</p>
               <div className="text-center md:text-left">
                 <h2 className="text-3xl mb-3 font-bold">Tomy James</h2>
                 <p className="rounded-2xl">
@@ -259,6 +265,7 @@ export default function Home() {
             <Button> Hire Our Profesional Now !</Button>
           </div>
           <img src={worker1} className="image-offer-section" alt="" />
+          <p>lorem25</p>
         </div>
       </section>
       <section className="bg-green-dark-theme-500">
@@ -271,9 +278,13 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-2 container-image-projects mb-5 xl:mx-20">
             <img src={project1} alt="" />
+            <p>lorem25</p>
             <img src={project2} alt="" />
+            <p>lorem25</p>
             <img src={project3} alt="" />
+            <p>lorem25</p>
             <img src={project4} alt="" />
+            <p>lorem25</p>
           </div>
           <button className="bg-green-theme-500 flex align-middle justify-center mx-auto hover:bg-green-theme-600 text-white py-2 px-4 rounded">
             <p>More projects</p>
@@ -301,17 +312,38 @@ export default function Home() {
           />
           <PricingCard
             name="Standart"
-            price="10"
-            subprice="68"
+            price="23"
+            subprice="83"
             description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere veniam eius quidem veritatis culpa et? Accusantium nemo architecto perspiciatis unde?"
           />
           <PricingCard
             name="Premium"
-            price="10"
-            subprice="68"
+            price="47"
+            subprice="98"
             description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere veniam eius quidem veritatis culpa et? Accusantium nemo architecto perspiciatis unde?"
           />
         </div>
+      </section>
+      <section className="bg-green-dark-theme-500">
+        <footer className="container text-white mx-auto grid grid-cols-3">
+          <div className="">
+            <img src={logo} alt="" />
+            <p className="text-white  text-sm mt-4">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
+              voluptates harum quaerat ratione. Unde officiis nemo, harum
+              voluptatum suscipit quibusdam iure accusantium enim fugit est?
+            </p>
+          </div>
+          <div className="">
+            <h4 className="text-2xl 4 font-bold">Contact us : </h4>
+            <ul>
+              <li className="flex">
+                <img src="" alt="" />
+                +1 736 829 73
+              </li>
+            </ul>
+          </div>
+        </footer>
       </section>
     </Layout>
   );

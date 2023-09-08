@@ -7,7 +7,10 @@ export default function PricingCard(props) {
       <h4 className="font-signpainter text-4xl text-white text-center py-3">
         {props.name}
       </h4>
-      <hr className="" />
+      <hr
+        className="bg-green-theme-500"
+        style={{ backgroundColor: "#31BE6C", border: "none", height: "3px" }}
+      />
       <h3 className="text-5xl text-white text-center mt-5">
         <sup className="text-3xl">$</sup>
         {props.price}
