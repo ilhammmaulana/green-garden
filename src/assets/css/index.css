@@ -25,6 +25,7 @@
 * {
     font-family: 'Poppins', Arial, sans-serif;
     /* border: 1px solid green; */
+    box-sizing: border-box;
 }
 
 html {
@@ -121,24 +122,72 @@ img.image-offer-section {
     padding: .5rem 0;
 }
 
+#footer {
+    height: 400px;
+
+}
+
+.image-footer {
+    position: relative;
+    height: 100%;
+    /* Ensure the image doesn't overflow the container */
+}
+
+.image-footer img {
+    max-width: 400px;
+    height: auto;
+    position: absolute;
+    bottom: -10rem;
+    z-index: 2 !important;
+    left: 70%;
+    transform: translateX(-50%);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .image-footer img {
+        max-width: 200px !important;
+    }
+}
+
 
 @media only screen and (max-width: 1200px) {
     img.image-offer-section {
         width: 400px;
         bottom: 4rem;
     }
+
+    .image-footer img {
+        max-width: 300px;
+        height: auto;
+        position: absolute;
+        bottom: -1rem;
+        z-index: 2 !important;
+        transform: translateX(-40%);
+    }
 }
 
 .container-image-projects img {
     width: 100%;
-    /* Set the width to 100% to fill the column */
     height: 200px;
-    /* Allow the height to adjust proportionally based on the width */
 }
 
 @media only screen and (max-width: 928px) {
     #offer-section {
         height: auto !important;
+    }
+
+    .image-footer img {
+        max-width: 200px;
+        height: auto;
+        position: absolute;
+        bottom: -8rem;
+        z-index: 2 !important;
+        transform: translateX(-40%);
+    }
+
+    #footer {
+        height: auto !important
     }
 
     img.image-offer-section {
@@ -163,6 +212,20 @@ img.image-offer-section {
     .slick-slider.slick-initialized {
         height: auto;
     }
+
+    .image-footer {
+        display: none;
+    }
+
+    .image-footer img {
+        max-width: 200px;
+        height: auto;
+        position: absolute;
+        bottom: -8rem;
+        z-index: 2 !important;
+        transform: translateX(10%);
+    }
+
 
     .slick-next {
         display: block !important;

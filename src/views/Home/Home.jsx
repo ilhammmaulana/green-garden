@@ -25,15 +25,26 @@ import imagService2 from "../../assets/images/stock/Service-5.jpeg";
 import imagService3 from "../../assets/images/stock/Service-3.jpeg";
 import imagService4 from "../../assets/images/stock/Service-4.jpeg";
 import worker1 from "../../assets/images/stock/worker2.png";
-
+import worker2 from "../../assets/images/stock/worker4.png";
 // Icons
 import iconArrow from "../../assets/images/icons/arrow-right.png";
+import callPhone from "../../assets/images/icons/Footer-icon-phone.png";
+import mailIcon from "../../assets/images/icons/Footer-icon-envelope.png";
+import locationIcon from "../../assets/images/icons/Footer-icon-marker.png";
+import doorOpenIcon from "../../assets/images/icons/Footer-icon-door-open.png";
+
 // Projects
 import project1 from "../../assets/images/stock/Project-1.jpeg";
 import project2 from "../../assets/images/stock/Project-2.jpeg";
 import project3 from "../../assets/images/stock/Project-3.jpeg";
 import project4 from "../../assets/images/stock/Project-4.jpeg";
 import logo from "../../assets/images/logos/Logo-GG-w200.png";
+
+import facebookIcon from "../../assets/images/icons/Social-Media-facebook-square.png";
+import googgleIcon from "../../assets/images/icons/Social-Media-google-plus-square.png";
+import instagramIcon from "../../assets/images/icons/Social-Media-instagram.png";
+import linekdinIcon from "../../assets/images/icons/Social-Media-linkedin.png";
+import XIcon from "../../assets/images/icons/Social-Media-twitter-square.png";
 
 export default function Home() {
   const settings = {
@@ -64,7 +75,7 @@ export default function Home() {
           <h2 className="text-white text-5xl md:text-8xl font-signpainter ">
             Green View For Good Live
           </h2>
-          <h6 className="text-white mb-3 text-lg font-light mt-4">
+          <h6 className="text-white mb-3 text-lg font-light ">
             Prepare your garden with our profesional
           </h6>
           <Button>Hire Our Profesional Now!</Button>
@@ -138,7 +149,6 @@ export default function Home() {
           <Slider {...settings}>
             <div className="card-component md:flex gap-5">
               <img src={client1} alt="" className="mx-auto rounded-full" />
-              <p>lorem25</p>
               <div className="text-center md:text-left">
                 <h2 className="text-3xl mb-3 font-bold">Jean Fox JR</h2>
                 <p className="rounded-2xl">
@@ -152,7 +162,6 @@ export default function Home() {
             </div>
             <div className="card-component md:flex justify-center  mx-auto gap-5">
               <img src={client2} alt="" className="mx-auto rounded-full" />
-              <p>lorem25</p>
               <div className="text-center md:text-left">
                 <h2 className="text-3xl mb-3 font-bold">Jessie Crager</h2>
                 <p className="rounded-2xl">
@@ -166,7 +175,6 @@ export default function Home() {
             </div>
             <div className="card-component md:flex justify-center  mx-auto gap-5">
               <img src={client3} alt="" className="mx-auto rounded-full" />
-              <p>lorem25</p>
               <div className="text-center md:text-left">
                 <h2 className="text-3xl mb-3 font-bold">Gennie Dee</h2>
                 <p className="rounded-2xl">
@@ -180,7 +188,6 @@ export default function Home() {
             </div>
             <div className="card-component md:flex justify-center  mx-auto gap-5">
               <img src={client4} alt="" className="mx-auto rounded-full" />
-              <p>lorem25</p>
               <div className="text-center md:text-left">
                 <h2 className="text-3xl mb-3 font-bold">Yoshi</h2>
                 <p className="rounded-2xl">
@@ -194,7 +201,6 @@ export default function Home() {
             </div>
             <div className="card-component md:flex justify-center  mx-auto gap-5">
               <img src={client5} alt="" className="mx-auto rounded-full" />
-              <p>lorem25</p>
               <div className="text-center md:text-left">
                 <h2 className="text-3xl mb-3 font-bold">Tomy James</h2>
                 <p className="rounded-2xl">
@@ -265,7 +271,6 @@ export default function Home() {
             <Button> Hire Our Profesional Now !</Button>
           </div>
           <img src={worker1} className="image-offer-section" alt="" />
-          <p>lorem25</p>
         </div>
       </section>
       <section className="bg-green-dark-theme-500">
@@ -278,13 +283,9 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-2 container-image-projects mb-5 xl:mx-20">
             <img src={project1} alt="" />
-            <p>lorem25</p>
             <img src={project2} alt="" />
-            <p>lorem25</p>
             <img src={project3} alt="" />
-            <p>lorem25</p>
             <img src={project4} alt="" />
-            <p>lorem25</p>
           </div>
           <button className="bg-green-theme-500 flex align-middle justify-center mx-auto hover:bg-green-theme-600 text-white py-2 px-4 rounded">
             <p>More projects</p>
@@ -324,27 +325,71 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="bg-green-dark-theme-500">
-        <footer className="container text-white mx-auto grid grid-cols-3">
-          <div className="">
-            <img src={logo} alt="" />
-            <p className="text-white  text-sm mt-4">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
-              voluptates harum quaerat ratione. Unde officiis nemo, harum
-              voluptatum suscipit quibusdam iure accusantium enim fugit est?
-            </p>
-          </div>
-          <div className="">
-            <h4 className="text-2xl 4 font-bold">Contact us : </h4>
-            <ul>
-              <li className="flex">
-                <img src="" alt="" />
-                +1 736 829 73
-              </li>
-            </ul>
+      <section className="bg-green-dark-theme-500" id="footer">
+        <footer className="container mx-auto text-white">
+          <div className="grid grid-cols-1 sm:grid-cols-3 md:gap-20 gap-3 md:mx-20 z-50">
+            <div className="">
+              <img src={logo} alt="" className="max-w-full h-auto" />
+              <p className="text-white text-sm mt-4">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
+                voluptates harum quaerat ratione. Unde officiis nemo, harum
+                voluptatum suscipit quibusdam iure accusantium enim fugit est?
+              </p>
+              <h5 className="text-green-theme-500 fw-bold mt-3">
+                Readmore &gt;
+              </h5>
+            </div>
+            <div className="">
+              <h4 className="text-2xl font-bold">Contact us :</h4>
+              <ul className="mt-3">
+                <li className="flex items-center mb-1 text-sm">
+                  <img src={callPhone} alt="" className="me-2" />
+                  +1 736 829 73
+                </li>
+                <li className="flex items-center mb-1">
+                  <img src={mailIcon} alt="" className="me-2" />
+                  contac@ilhamm.biz.id
+                </li>
+                <li className="flex items-center mb-1">
+                  <img src={locationIcon} alt="" className="me-2" />
+                  Jalan kenangan 20923 Semarang Banyumanik
+                </li>
+                <li className="flex items-center mb-1">
+                  <img src={doorOpenIcon} alt="" className="me-2" />
+                  Opening hour : Monday - Friday <br /> 09:00 - 17:00
+                </li>
+              </ul>
+            </div>
+            <div className="image-footer">
+              <img src={worker2} alt="" className="max-w-full h-auto" />
+            </div>
           </div>
         </footer>
       </section>
+      <div className="bg-slate-800 relative bottom-0 z-40 py-4">
+        <div className="flex justify-around flex-col sm:flex-row text-white">
+          <p className="mx-2 sm:mx-0">
+            &copy; Copyright Green Garden 2023. All Rights Reversed
+          </p>
+          <div className="flex gap-2 md:gap-3 sm:mt-0 mt-2 ms-2">
+            <a href="https://ilhamm.biz.id">
+              <img src={facebookIcon} alt="" />
+            </a>
+            <a href="https://ilhamm.biz.id">
+              <img src={googgleIcon} alt="" />
+            </a>
+            <a href="https://ilhamm.biz.id">
+              <img src={instagramIcon} alt="" />
+            </a>
+            <a href="https://ilhamm.biz.id">
+              <img src={linekdinIcon} alt="" />
+            </a>
+            <a href="https://ilhamm.biz.id">
+              <img src={XIcon} alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
     </Layout>
   );
 }
