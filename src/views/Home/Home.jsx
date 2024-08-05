@@ -5,7 +5,7 @@ import Button from "../../components/buttons/Button";
 import PricingCard from "../../components/cards/PricingCard";
 import BasicCard from "../../components/cards/BasicCard";
 
-import starIcon from "../../assets/images/icons/icon-star.png";
+import starIcon from "../../assets/images/icons/Icon-star.png";
 import legalCompany from "../../assets/images/icons/Icon-legal-company.png";
 import focusOnQualityIcon from "../../assets/images/icons/Icon-award.png";
 import goodPriceIcon from "../../assets/images/icons/Icon-good-price.png";
